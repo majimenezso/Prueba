@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <h3 class="text-center text-black pt-5">Login </h3>
+
+        <div class="text-center">
+
+            <label for="username" class=" text-center text-info">Username:</label><br>
+        </div>
+        <div class="text-center">
+            <input id="Text1" type="text" name="x" />
+        </div>
+        <div class="text-center">
+            <label for="password" class="text-info">Password:</label><br>
+        </div>
+        <div class="text-center" >
+            <input id="Text1" type="text" name="y" />
+        </div>
+
+        <div class="text-center">
+            <h2></h2>
+        </div>
+        <div class="text-center">
+            <button type="submit">Iniciar</button>
+
+        </div>
+    }
+
+<div class="text-center">
+    <h2>@(ViewBag.Message)</h2>
+</div>
+</body>
+
+
+
